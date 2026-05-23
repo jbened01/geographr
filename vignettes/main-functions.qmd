@@ -31,7 +31,7 @@ summarize_regime_types(democracy_data, year = 2020)
 This should show how many countries were in each `regime_category` during a selected year.
 
 ```{r}
-compare_election_access(democracy_data, country = "Afghanistan")
+find_regime_changes(democracy_data, country = "Afghanistan")
 ```
 
-This should summarize how election access changed over time for one country using columns like `has_full_suffrage`, `is_multiparty`, and `has_free_and_fair_election`.
+This should find years where a country experienced a regime change using `has_regime_change_lag` and display the associated `regime_category`.

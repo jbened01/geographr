@@ -12,6 +12,3 @@ A tibble containing country-level democracy data.
 \description{
 Loads the TidyTuesday democracy dataset from November 5, 2024.
 }
-\examples{
-democracy_data <- load_data()
-}
