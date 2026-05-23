@@ -1,0 +1,37 @@
+---
+title: "main-functions"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{main-functions}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(geographr)
+```
+
+```{r}
+plot_regime_trends(democracy_data, countries = c("Afghanistan", "Canada", "United States"), min_year = 1950)
+```
+
+This should make a line plot showing `spatial_democracy` over time for selected countries.
+
+```{r}
+summarize_regime_types(democracy_data, year = 2020)
+```
+
+This should calculate how many countries were in each `regime_category` during a selected year.
+
+```{r}
+compare_election_access(democracy_data, country = "Afghanistan")
+```
+
+This should summarize how election access changed over time for one country using columns like `has_full_suffrage`, `is_multiparty`, and `has_free_and_fair_election`.
