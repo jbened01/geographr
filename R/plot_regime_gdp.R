@@ -57,7 +57,7 @@ plot_regime_gdp <- function(data, start_year = 2000, end_year = 2020) {
       x = "",
       y = "Mean GDP per Capita (USD)",
       title = "Mean GDP per Capita by Regime Type",
-      subtitle = paste0("Averaged across countries, ", start_year, "–", end_year),
+      subtitle = paste0("Averaged across countries, ", start_year, "-", end_year),
       fill = "Regime Type"
     ) +
     theme_minimal() +

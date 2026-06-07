@@ -23,8 +23,11 @@ Imports:
     viridis,
     data.table
 Suggests:
+    tibble,
     knitr,
-    testthat (>= 3.0.0)
+    testthat (>= 3.0.0),
+    rmarkdown
+VignetteBuilder: knitr
 URL: https://github.com/jbened01/geographr
 BugReports: https://github.com/jbened01/geographr/issues
 Config/testthat/edition: 3
