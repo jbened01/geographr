@@ -16,23 +16,25 @@ knitr::opts_chunk$set(
 
 ```{r setup}
 library(geographr)
+
+geo_data <- load_data()
 ```
 
 
 ```{r}
-plot_regime_gdp(plot_data, start_year = 2000, end_year = 2020)
+plot_regime_gdp(geo_data, start_year = 2000, end_year = 2020)
 ```
 
 This should show how many countries were in each `regime_category` during a selected year.
 
 ```{r}
-summarize_gdp_by_regime(data, year = NULL)
+summarize_gdp_by_regime(geo_data, year = NULL)
 ```
 
 This should find years where a country experienced a regime change using `has_regime_change_lag` and display the associated `regime_category`.
 
 ```{r}
-plot_tenure_ridge(tenure_data,
+plot_tenure_ridge(geo_data,
   regimes = c("Presidential democracy", "Military dictatorship"))
 ```
 
